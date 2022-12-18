@@ -1,13 +1,149 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500&display=swap');
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  border: none;
+  outline: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+ 
+}
+body{
+  font-family: 'Tajawal', sans-serif;
+  background: var(--color-bg-dark);
+  color: var(--colot-white);
+  line-height: 1.7;
+  background-image: url('./assets/images/az-subtle.png');
+
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+
+/* root : variables available across app : -- variableName : value  */
+/* The :root CSS pseudo-class matches the root element of 
+a tree representing the document. 
+In HTML,
+ :root represents the <html> element and is identical to the selector html, */
+
+:root{
+  --color-bg-dark : #850E35;  /* -- represent custom variables */
+  --color-bg-light : #EE6983;
+  --color-font-light:#FFF5E4;
+  --color-font-dark:#FFC4C4;
+  --colot-white:#fff;
+  /*width of container class and can be used in media queries */
+  --container-width-lg:75%;
+  --container-width-md:85%;
+  --container-width-sm:90%;
+  --transition: all 400ms ease;
+  }
+  
+  /* set a smooth scrolling transition esp if visiting a link */
+  html{
+    scroll-behavior: smooth;
+  }
+  ::-webkit-scrollbar{
+    display: none;
+  }
+
+  /* ============GENERAL STYLING================ */
+  .container{
+    width: var(--container-width-lg);
+    margin: 0 auto;
+  }
+  h1,h2,h3,h4,h5,h6{
+    font-weight: 500;
+  }
+  /*rem	Relative to font-size of the root element*/
+ h1{
+  font-size: 2.5rem;
+ }
+
+ section{
+  margin-top:8rem ;
+ }
+ /*section headers in middle */
+ section > h2,
+ section > h5 {
+  text-align: center;
+  color: var(--color-font-light);
+
+ }
+ section > h5{
+  margin-bottom: 3rem;
+ }
+ .text-light{
+  color: var(--color-font-light);
+ }
+ a , .text-dark{
+  color: var(--color-font-dark);
+ }
+ a{
+  transition: var(--transition);
+ }
+ a:hover{
+  color: var(--color-font-light);
+ }
+
+ .btn{
+  width: max-content;  /* no wrap */
+  padding: 0.75rem 1.2rem;
+  color: var(--color-font-light);
+  background: var(--color-bg-dark);
+  border: 1px solid var(--color-font-dark) ;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: var(--transition);
+  display: inline-block;
+  height: 3rem;  width: 6rem;   /* to prevent bad inc in height */
+  width: fit-content;
+
+ }
+
+ .btn:hover{
+  background: var(--color-font-dark);
+  color: var(--color-bg-dark);
+  border: 1px solid var(--color-font-dark) ;
+  
+ }
+ .btn-primary{
+  background: var(--color-font-light);
+  color: var(--color-bg-dark);
+  border: none;
+
+ }
+ .btn-primary:hover{
+  background: var(--color-bg-dark);
+  color: var(--color-font-light);
+  border: 1px solid var(--color-font-dark) ;
+
+
+ }
+
+ img{
+  width: 100%;
+  display: block;
+  object-fit: cover; /*sets how the content of img should be resized to fit its container.*/
+ }
+
+ /*=========Media Queries =========  */
+
+ @media screen and (max-width:1024px) {
+  .container{
+    width : var(--container-width-md)  /* 85%*/
+  }
+  section{
+    margin-top: 6rem;
+  }
+  
+ }
+ /* mobile phones */
+ @media screen and (max-width:600px) { 
+  .container{
+    width : var(--container-width-sm)
+  }
+  section > h2{  /* dist from lage header and bellow smaller header */
+    margin-top: 3rem;
+  }
+  
+ }
