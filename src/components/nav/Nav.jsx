@@ -1,14 +1,26 @@
 import React from 'react'
+import { BsGithub, BsLinkedin } from 'react-icons/bs';
 import './nav.css'
 
 export const Nav = () => {
   return (
-    <div>
-      {/* <a href='#'><h3>Linkyyy</h3></a> */}
-      {/* <button className='btn'>Click meeee</button> */}
-      {/* <img src='https://dubaitrippackages.files.wordpress.com/2017/11/2-imgdinosaurs_base.jpg' /> */}
-      {/* <button className='btn-primary'>Click primary</button>  */}
+    <div className='nav'>
 
+      <div className='socials'>
+        <a href='https://www.linkedin.com/in/shazaali/' rel="noreferrer" target='_blank'
+          style={{ marginRight: '1rem' }}
+        ><BsLinkedin /></a>
+        <a href='https://github.com/shazaaly' rel="noreferrer" target='_blank'><BsGithub /></a>
+      </div>
+
+      <div className='internal-sections'>
+        <a href='#about'>About</a>
+        <a href='#experience'>Experience</a>
+        <a href='#portfolio'>Portfolio</a>
+        <a href='#services'>Services</a>
+        <a href='#testimonials'>Testimonials</a>
+
+      </div>
     </div>
   )
 }

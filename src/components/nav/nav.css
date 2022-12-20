@@ -1,0 +1,21 @@
+.nav {
+  display: grid;
+  grid-template-columns: 1fr minmax(100px, 5rem) 1fr;
+  grid-template-rows: 3rem;
+  /* padding: 1rem 1rem; */
+  /* padding: 2rem 7rem; */
+}
+.internal-sections {
+  grid-column: 3 / -1;
+  /* responsiveness */
+  display: flex;
+  flex-wrap: wrap;
+}
+.internal-sections a {
+  font-size: 1.2rem;
+  padding: 0.4rem;
+}
+.socials {
+  padding: 0.4rem;
+  font-size: 1.2rem;
+}
