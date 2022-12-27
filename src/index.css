@@ -56,11 +56,12 @@ In HTML,
   }
   /*rem	Relative to font-size of the root element*/
  h1{
-  font-size: 2.5rem;
+  font-size: 2.6rem;
  }
 
  section{
   margin-top:2.8rem ;
+  width: fit-content;
  }
  /*section headers in middle */
  section > h2,
@@ -70,8 +71,13 @@ In HTML,
 
  }
  section > h5{
-  margin-bottom: 1.4rem;
+  margin-bottom: 1.2rem;
+  margin-top: 1.5rem;
  }
+ section > h2{
+  margin-bottom: 2.4rem;
+ }
+
  .text-light{
   color: var(--color-font-light);
  }

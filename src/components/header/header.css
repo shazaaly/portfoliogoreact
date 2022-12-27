@@ -1,5 +1,6 @@
 header {
-  height: 100vh;
+  /* height: 100vh; */
+  height: 66vh;
   overflow: hidden;
 }
 
@@ -141,9 +142,26 @@ div[animation="1"] {
     width: 9rem;
     border-radius: 20px;
     height: 15rem;
-    
   }
   .scroll-down {
     display: none;
   }
+}
+
+@media all and (max-width: 500px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  img{
+    transform: translate(0);
+  }
+
+  header{
+    height: 50vh;
+  }
+  section > h2 {
+    margin-top: 0;
+}
 }

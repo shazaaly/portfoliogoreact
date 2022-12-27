@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { Cv } from '../cv/Cv'
+import { CvData } from '../cv/CvData'
 import me from '../../assets/images/self1.jpeg'
 
 import './header.css'
@@ -8,13 +8,15 @@ export const Header = () => {
 
     useEffect(() => {
         setAnimation(1);
-       
+
     })
 
     return (
         /* Header semantic tags */
         <header className='header'>
+
             <div className='container header-container'>
+
 
                 <div className='intro'>
 
@@ -30,8 +32,11 @@ export const Header = () => {
                 <div animation={animation} className='job' >
                     <h3 className='text-dark'>Fullstack JavaScript developer </h3>
                 </div>
+
+
                 <div className='cv'>
-                    <Cv />
+                    <CvData />
+                    
 
                 </div>
 
