@@ -35,19 +35,19 @@ export const Nav = () => {
       </div>
 
       <div className='internal-sections'>
-{/* 
+
         <a href='#home'>Home</a>
         <a href='#about'>About</a>
         <a href='#experience'>Experience</a>
         <a href='#portfolio'>Portfolio</a>
         <a href='#services'>Services</a>
-        <a href='#testimonials'>Testimonials</a> */}
+        <a href='#testimonials'>Testimonials</a>
 
-        <NavLink to="/" >Home </NavLink>
+        {/* <NavLink to="/" >Home </NavLink>
         <NavLink to="/about" >About </NavLink>
         <NavLink to="/experience" >Experience </NavLink>
         <NavLink to="/contact" >Portfolio </NavLink>
-        <NavLink to="/services" >Services </NavLink>
+        <NavLink to="/services" >Services </NavLink> */}
 
       </div>
 

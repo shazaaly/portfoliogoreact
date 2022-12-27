@@ -18,31 +18,31 @@ function App() {
 
   return (
     <div >
-      <Nav />
-
+      {/* <Nav /> */}
+{/* 
       <Routes>
 
         <Route path='/' element={<Header />} />
-        {/* <Route path='/about' element={<About />} /> */}
+        <Route path='/about' element={<About />} />
         <Route path='/experience' element={<Experience />} />
         <Route path='/contact' element={<Contact />} />
         <Route path='/services' element={<Services />} />
         <Route path='/testimonials' element={<Testimonials />} />
 
-      </Routes>
-      <About />
+      </Routes> */}
+      {/* <About /> */}
 
 
     
-      {/* <Nav />
+     <Nav />
       <Header />
       <About />
       <Experience />
-      <Services />
-      <Portfolio />
-      <Testimonials />
+      {/* <Services /> */}
+      {/* <Portfolio /> */}
+      {/* <Testimonials /> */}
       <Contact />
-      <Footer /> */}
+      {/* <Footer />  */}
 
     </div>
   );
