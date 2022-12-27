@@ -60,7 +60,7 @@ In HTML,
  }
 
  section{
-  margin-top:8rem ;
+  margin-top:2.8rem ;
  }
  /*section headers in middle */
  section > h2,
@@ -70,7 +70,7 @@ In HTML,
 
  }
  section > h5{
-  margin-bottom: 3rem;
+  margin-bottom: 1.4rem;
  }
  .text-light{
   color: var(--color-font-light);

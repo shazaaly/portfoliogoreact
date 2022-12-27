@@ -1,3 +1,5 @@
+import { useRef } from 'react';
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import { About } from './components/about/About';
 import { Contact } from './components/contact/Contact';
@@ -10,9 +12,24 @@ import { Services } from './components/services/Services';
 import { Testimonials } from './components/testimonials/Testimonials';
 
 function App() {
+
+
+
   return (
-    <>
+    <div >
       <Nav />
+
+      <Routes>
+
+        <Route path='/' element={<Header />} />
+        <Route path='/about' element={<About />} />
+        <Route path='/experience' element={<Experience />} />
+        <Route path='/contact' element={<Contact />} />
+        <Route path='/services' element={<Services />} />
+        <Route path='/testimonials' element={<Testimonials />} />
+
+      </Routes>
+      {/* <Nav />
       <Header />
       <About />
       <Experience />
@@ -20,9 +37,9 @@ function App() {
       <Portfolio />
       <Testimonials />
       <Contact />
-      <Footer />
+      <Footer /> */}
 
-    </>
+    </div>
   );
 }
 

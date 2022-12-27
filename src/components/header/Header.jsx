@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { Cv } from '../cv/Cv'
-import me from '../../assets/images/me-removebg-preview.png'
+import me from '../../assets/images/self1.jpeg'
 
 import './header.css'
 export const Header = () => {
@@ -8,9 +8,7 @@ export const Header = () => {
 
     useEffect(() => {
         setAnimation(1);
-        return () => {
-
-        }
+       
     })
 
     return (
@@ -25,7 +23,7 @@ export const Header = () => {
                 </div>
 
                 <div animation={animation}>
-                    <h1 className='text-light'>Mohammad Rashed</h1>
+                    <h1 className='text-light'>Shaza Aly</h1>
 
                 </div>
 
