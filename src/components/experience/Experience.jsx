@@ -15,7 +15,9 @@ export const Experience = () => {
       <h5>Work Samples </h5>
       <h2>Featured Projects</h2>
 
+
       <div className='container exp_container'>
+
         <div className='exp_cards'>
           <article className='card'>
             <h3>Restaurant RTL</h3>

@@ -36,7 +36,7 @@ export const Header = () => {
 
                 <div className='cv'>
                     <CvData />
-                    
+
 
                 </div>
 
@@ -45,11 +45,13 @@ export const Header = () => {
                 </div>
 
 
+
                 <a href='#contact' className='scroll-down'>Scroll Down</a>
 
             </div>
 
 
+           
 
 
         </header>

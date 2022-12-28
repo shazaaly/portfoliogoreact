@@ -17,9 +17,9 @@ function App() {
 
 
   return (
-    <div >
+    < >
       {/* <Nav /> */}
-{/* 
+      {/* 
       <Routes>
 
         <Route path='/' element={<Header />} />
@@ -33,8 +33,8 @@ function App() {
       {/* <About /> */}
 
 
-    
-     <Nav />
+
+      <Nav />
       <Header />
       <About />
       <Experience />
@@ -42,9 +42,9 @@ function App() {
       {/* <Portfolio /> */}
       {/* <Testimonials /> */}
       <Contact />
-      {/* <Footer />  */}
+      <Footer />
 
-    </div>
+    </>
   );
 }
 
